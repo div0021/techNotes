@@ -5,7 +5,7 @@ import { setCredentials } from '../../features/auth/authSlice';
 // Allow jwt access token and refresh token
 
 const baseQuery=fetchBaseQuery({
-    baseUrl:'https://technotes-api.onrender.com',
+    baseUrl:'https://technotes-api-wcxt.onrender.com',
     credentials:'include',
     prepareHeaders: (headers,{getState}) =>{
         const token = getState().auth.token;
